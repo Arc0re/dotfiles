@@ -41,6 +41,7 @@ set cursorline
 
 " allows auto indent depending on the file
 filetype plugin indent on
+set omnifunc=syntaxcomplete#Complete
 
 " allows reload of the file if its modified elsewhere
 set autoread
