@@ -12,6 +12,9 @@
 " enables syntax highlighting
 syntax enable 
 
+" Enable 256 colors
+set t_Co=256
+
 " changing colorscheme
 set background=dark " light or dark theme
 "colorscheme ir_black
