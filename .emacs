@@ -1,29 +1,20 @@
-(set-background-color "#00000")
-;; turn off the menu bar
+(add-to-list 'load-path "~/.emacs.d/custom/")
+(load "vbnet-mode")
+
+;; set transparency
+;;(set-frame-parameter (selected-frame) 'alpha '(85 85))
+;;(add-to-list 'default-frame-alist '(alpha 85 85))
+
+;; turn off the menu bar and the tool bar
 (menu-bar-mode -1)
+(tool-bar-mode -1)
+
 ;; display time
 (display-time)
+
 ;; line numbers
 (global-linum-mode)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector
-   [default default default italic underline success warning error])
- '(ansi-color-names-vector
-   ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
- '(custom-enabled-themes (quote (wheatgrass)))
- '(custom-safe-themes
-   (quote
-    ("adbe7ba38c551281f21d760de0840cab0e1259964075a7e46cc2b9fdea4b82d6" "4ba6aa8a2776688ef7fbf3eb2b5addfd86d6e8516a701e69720b705d0fbe7f08" default))))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
 ;; Enable mouse support
 (unless window-system
   (require 'mouse)
@@ -40,6 +31,10 @@
 ;; no startup msg
 (setq inhibit-startup-message t)
 
+;; highlight current line
+;;(global-hl-line-mode)
+;;(set-face-background hl-line-face "gray13")
+
 ;; MELPA stuff
 (require 'package)
 (add-to-list 'package-archives
@@ -55,9 +50,9 @@
 (add-hook 'html-mode-hook 'skewer-html-mode)
 
 ;; Localhost
-(require 'simple-httpd)
+;;(require 'simple-httpd)
 ;; -- set root folder for httpd server
-(setq httpd-root "~/Desktop/canvas_stuff")
+(setq httpd-root "~/Desktop/")
 
 ;; copy to clipboard
 (defun pbcopy ()
@@ -80,3 +75,25 @@
 
 ;; Associate .js to js2-mode
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.vb\\'" . vbnet-mode))
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+   [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
+ '(custom-enabled-themes (quote (granger)))
+ '(custom-safe-themes
+   (quote
+    ("18a33cdb764e4baf99b23dcd5abdbf1249670d412c6d3a8092ae1a7b211613d5" "9b402e9e8f62024b2e7f516465b63a4927028a7055392290600b776e4a5b9905" "72a81c54c97b9e5efcc3ea214382615649ebb539cb4f2fe3a46cd12af72c7607" "55ed02951e7b458e4cd18837eefa1956884c9afd22bb514f697fd1d2d1abb3d3" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
