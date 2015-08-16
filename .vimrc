@@ -48,6 +48,8 @@ set clipboard=unnamed
 " highlighting searches
 set hlsearch
 
+" enabling mouse for noobs
+set mouse=a
 
 """""""""""""""""""
 """" Vim behaviour
