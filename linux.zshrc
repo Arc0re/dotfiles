@@ -90,5 +90,5 @@ alias gs="git status"
 alias htop="sudo htop"
 
 plugins=(history history-substring-search python)
-
-[ -s "/Users/thomasguyot/.dnx/dnvm/dnvm.sh" ] && . "/Users/thomasguyot/.dnx/dnvm/dnvm.sh" # Load dnvm
+# Startup stuff (greetings)
+alsi
