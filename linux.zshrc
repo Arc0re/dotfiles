@@ -79,7 +79,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias fucking="sudo"
-alias vim="mvim -v" # CAREFUL TO CHANGE THAT IF ON LINUX
+alias vim="vim"
 alias vrc="vim ~/.vimrc"
 alias zrc="vim ~/.zshrc"
 alias la="ls -laGF"
@@ -92,6 +92,3 @@ alias htop="sudo htop"
 plugins=(history history-substring-search python)
 
 [ -s "/Users/thomasguyot/.dnx/dnvm/dnvm.sh" ] && . "/Users/thomasguyot/.dnx/dnvm/dnvm.sh" # Load dnvm
-
-# MAC ONLY #
-sw
