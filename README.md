@@ -1,2 +1,2 @@
 # dotfiles
-Dotfiles for Neovim (and maybe Fish)
+Fichiers de config pour zsh (et OH-MY-ZSH), vim et emacs.
