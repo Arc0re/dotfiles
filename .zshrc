@@ -83,8 +83,10 @@ alias vrc="vim ~/.vimrc"
 alias zrc="vim ~/.zshrc"
 alias la="ls -laGF"
 alias w="w | grep up | awk -F ', ' '{print \"\\033[35m--> \" \$1 \"\\033[31m  \" \$2 \"\\033[34m  \" \$3 \"\\033[36m  \" \$4}'"
-# Git aliases
-alias gss="git status"
+alias sw="printf \"\\n\" && w && printf \"\\n\" && dfc"
+alias src="source ~/.zshrc"
+alias gs="git status"
+
 plugins=(history history-substring-search python)
 
 [ -s "/Users/thomasguyot/.dnx/dnvm/dnvm.sh" ] && . "/Users/thomasguyot/.dnx/dnvm/dnvm.sh" # Load dnvm
