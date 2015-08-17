@@ -79,7 +79,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias fucking="sudo"
-alias vim="mvim -v"
+alias vim="mvim -v" # CAREFUL TO CHANGE THAT IF ON LINUX
 alias vrc="vim ~/.vimrc"
 alias zrc="vim ~/.zshrc"
 alias la="ls -laGF"
