@@ -88,6 +88,7 @@ alias sw="printf \"\\n\" && w && printf \"\\n\" && dfc"
 alias src="source ~/.zshrc"
 alias gs="git status"
 alias htop="sudo htop"
+alias gww="gcc -Wextra -Werror -Wall"
 
 plugins=(history history-substring-search python)
 
