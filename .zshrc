@@ -78,6 +78,7 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias fucking="sudo"
 alias vim="mvim -v"
 alias vrc="vim ~/.vimrc"
 alias zrc="vim ~/.zshrc"
@@ -86,6 +87,7 @@ alias w="w | grep up | awk -F ', ' '{print \"\\033[35m--> \" \$1 \"\\033[31m  \"
 alias sw="printf \"\\n\" && w && printf \"\\n\" && dfc"
 alias src="source ~/.zshrc"
 alias gs="git status"
+alias htop="sudo htop"
 
 plugins=(history history-substring-search python)
 
