@@ -94,4 +94,5 @@ plugins=(history history-substring-search python)
 [ -s "/Users/thomasguyot/.dnx/dnvm/dnvm.sh" ] && . "/Users/thomasguyot/.dnx/dnvm/dnvm.sh" # Load dnvm
 
 # MAC ONLY #
+python ~/pirate.py
 sw
