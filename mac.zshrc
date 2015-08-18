@@ -96,4 +96,5 @@ plugins=(history history-substring-search python)
 
 # MAC ONLY #
 # Startup stuff (greeting) 
+python ~/pirate.py
 sw
