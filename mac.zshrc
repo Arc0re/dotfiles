@@ -88,11 +88,12 @@ alias sw="printf \"\\n\" && w && printf \"\\n\" && dfc"
 alias src="source ~/.zshrc"
 alias gs="git status"
 alias htop="sudo htop"
+alias gww="gcc -Wextra -Werror -Wall"
 
 plugins=(history history-substring-search python)
 
 [ -s "/Users/thomasguyot/.dnx/dnvm/dnvm.sh" ] && . "/Users/thomasguyot/.dnx/dnvm/dnvm.sh" # Load dnvm
 
 # MAC ONLY #
-python ~/pirate.py
+# Startup stuff (greeting) 
 sw
