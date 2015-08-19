@@ -89,6 +89,7 @@ alias src="source ~/.zshrc"
 alias gs="git status"
 alias htop="sudo htop"
 alias gww="gcc -Werror -Wextra -Wall"
+alias mp3="ncmpcpp"
 
 plugins=(history history-substring-search python)
 # Startup stuff (greetings)
