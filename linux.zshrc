@@ -90,6 +90,7 @@ alias gs="git status"
 alias htop="sudo htop"
 alias gww="gcc -Werror -Wextra -Wall"
 alias mp3="ncmpcpp"
+alias tmux="tmux -2"
 
 plugins=(history history-substring-search python)
 # Startup stuff (greetings)
