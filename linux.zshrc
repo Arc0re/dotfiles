@@ -92,4 +92,5 @@ alias gww="gcc -Werror -Wextra -Wall"
 
 plugins=(history history-substring-search python)
 # Startup stuff (greetings)
-alsi
+# alsi
+screenfetch
