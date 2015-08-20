@@ -89,6 +89,7 @@ alias src="source ~/.zshrc"
 alias gs="git status"
 alias htop="sudo htop"
 alias gww="gcc -Wextra -Werror -Wall"
+alias starwars="telnet towel.blinkenlights.nl"
 
 plugins=(history history-substring-search python)
 
