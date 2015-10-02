@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="ys"
+ZSH_THEME="af-magic"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -90,6 +90,7 @@ alias gs="git status"
 alias htop="sudo htop"
 alias gww="gcc -Wextra -Werror -Wall"
 alias starwars="telnet towel.blinkenlights.nl"
+alias spaces="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";}' && killall Dock"
 
 plugins=(history history-substring-search python)
 
