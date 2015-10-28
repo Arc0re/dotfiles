@@ -26,7 +26,8 @@
 (setq make-backup-files nil)
 
 ; C/C++ stuff
-(setq c-default-style "linux" c-basic-offset 4) ; switches from GNU style and sets 4 spaces
+(setq-default c-basic-offset 4 tab-width 4 indent-tab-mode t) ; Global 4 spaces indentation
+(setq c-default-style "linux" c-basic-offset 4) ; switches from GNU style and sets it to 4 spaces
 
 ; Keyboard Shortcuts
 (global-set-key (kbd "M-f") 'load-file) ; Alt+f
