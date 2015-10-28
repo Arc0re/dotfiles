@@ -25,5 +25,6 @@
 (custom-set-faces
  )
 
-;; To launch Emacs with another .emacs than the $HOME one 
+;; To launch Emacs with another .emacs than the $HOME one :
 ;; emacs -q(--no-init-file) -l .emacs_to_load
+;; Equivalent of emacs -mm on Windows : (w32-send-sys-command 61488)
