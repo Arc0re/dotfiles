@@ -26,11 +26,13 @@
 (setq make-backup-files nil)
 
 ; C/C++ stuff
-(setq-default c-basic-offset 4)
+(setq c-default-style "linux" c-basic-offset 4) ; switches from GNU style and sets 4 spaces
 
 ; Keyboard Shortcuts
 (global-set-key (kbd "M-f") 'load-file) ; Alt+f
 (global-set-key (kbd "M-k") 'delete-window)
+(global-set-key (kbd "M-s") 'save-buffer) ; Mac style C-s
+(global-set-key (kbd "M-w") 'other-window) ; easier than C-x o
 
 ; Stuff setup from Emacs (themes, font)
 (custom-set-variables
