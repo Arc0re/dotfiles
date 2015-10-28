@@ -22,6 +22,15 @@
 (add-to-list 'default-frame-alist '(font . "Tamsyn-11"))
 (set-face-attribute 'default t :font "Tamsyn-11")
 
+; Prevent Emacs from making backup files
+(setq make-backup-files nil)
+
+; C/C++ stuff
+(setq-default c-basic-offset 4)
+
+; Keyboard Shortcuts
+(global-set-key (kbd "M-f") 'load-file) ; Alt+f
+(global-set-key (kbd "M-k") 'delete-window)
 
 ; Stuff setup from Emacs (themes, font)
 (custom-set-variables
