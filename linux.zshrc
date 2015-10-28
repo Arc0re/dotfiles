@@ -92,7 +92,7 @@ alias htop="sudo htop"
 alias gww="gcc -Werror -Wextra -Wall"
 alias mp3="ncmpcpp"
 alias tmux="tmux -2"
-alias love="~/love/src/love"
+alias notepad="mousepad"
 
 plugins=(history history-substring-search python)
 # Startup stuff (greetings)

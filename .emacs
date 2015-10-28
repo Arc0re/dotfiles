@@ -14,6 +14,10 @@
 ; Hide scroll bar
 (scroll-bar-mode -1)
 
+; Highlight current line
+(global-hl-line-mode)
+(set-face-background 'hl-line "dark blue")
+
 ; Font
 (add-to-list 'default-frame-alist '(font . "Tamsyn-11"))
 (set-face-attribute 'default t :font "Tamsyn-11")
