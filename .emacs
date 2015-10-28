@@ -9,6 +9,7 @@
 
 ; Menus
 (tool-bar-mode -1)
+(menu-bar-mode -1)
 
 ; Hide scroll bar
 (scroll-bar-mode -1)
