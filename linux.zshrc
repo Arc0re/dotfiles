@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="ys"
+ZSH_THEME="af-magic"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -79,6 +79,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias fucking="sudo"
+alias emacs="emacs -mm"
 alias vim="vim"
 alias vrc="vim ~/.vimrc"
 alias zrc="vim ~/.zshrc"
@@ -91,8 +92,10 @@ alias htop="sudo htop"
 alias gww="gcc -Werror -Wextra -Wall"
 alias mp3="ncmpcpp"
 alias tmux="tmux -2"
+alias love="~/love/src/love"
 
 plugins=(history history-substring-search python)
 # Startup stuff (greetings)
 # alsi
-screenfetch
+# screenfetch
+archey3
