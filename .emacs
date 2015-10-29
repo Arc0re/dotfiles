@@ -34,6 +34,7 @@
 (global-set-key (kbd "M-k") 'delete-window)
 (global-set-key (kbd "M-s") 'save-buffer) ; Mac style C-s
 (global-set-key (kbd "M-w") 'other-window) ; easier than C-x o
+(global-set-key (kbd "C-f") 'toggle-frame-maximized) ; C-f to fullscreen
 
 ; Stuff setup from Emacs (themes, font)
 (custom-set-variables
