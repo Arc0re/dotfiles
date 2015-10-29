@@ -91,6 +91,7 @@ alias htop="sudo htop"
 alias gww="gcc -Wextra -Werror -Wall"
 alias starwars="telnet towel.blinkenlights.nl"
 alias spaces="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";}' && killall Dock"
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs"
 
 plugins=(history history-substring-search python)
 

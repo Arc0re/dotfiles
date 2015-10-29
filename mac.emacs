@@ -19,8 +19,8 @@
 (set-face-background 'hl-line "dark blue")
 
 ; Font
-(add-to-list 'default-frame-alist '(font . "Tamsyn-11"))
-(set-face-attribute 'default t :font "Tamsyn-11")
+(add-to-list 'default-frame-alist '(font . "GohuFont-14"))
+(set-face-attribute 'default t :font "GohuFont-14")
 
 ; Prevent Emacs from making backup files
 (setq make-backup-files nil)
