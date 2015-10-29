@@ -34,7 +34,11 @@
 (global-set-key (kbd "M-k") 'delete-window)
 (global-set-key (kbd "M-s") 'save-buffer) ; Mac style C-s
 (global-set-key (kbd "M-w") 'other-window) ; easier than C-x o
+<<<<<<< HEAD
 (global-set-key (kbd "C-l") 'global-linum-mode) ; Toggle line numbers
+=======
+(global-set-key (kbd "C-f") 'toggle-frame-maximized) ; C-f to fullscreen
+>>>>>>> 5585f99c76535d1caeeeb1d2c3e7be7d750e77dc
 
 ; Stuff setup from Emacs (themes, font)
 (custom-set-variables
