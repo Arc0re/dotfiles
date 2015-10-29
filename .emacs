@@ -34,6 +34,7 @@
 (global-set-key (kbd "M-k") 'delete-window)
 (global-set-key (kbd "M-s") 'save-buffer) ; Mac style C-s
 (global-set-key (kbd "M-w") 'other-window) ; easier than C-x o
+(global-set-key (kbd "C-l") 'global-linum-mode) ; Toggle line numbers
 
 ; Stuff setup from Emacs (themes, font)
 (custom-set-variables
