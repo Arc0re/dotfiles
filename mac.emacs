@@ -22,8 +22,8 @@
 (set-face-background 'hl-line "dark blue")
 
 ; Font
-(add-to-list 'default-frame-alist '(font . "Liberation Mono-14"))
-(set-face-attribute 'default t :font "Liberation Mono-14")
+(add-to-list 'default-frame-alist '(font . "Liberation Mono-12"))
+(set-face-attribute 'default t :font "Liberation Mono-12")
 
 ; Prevent Emacs from making backup files
 (setq make-backup-files nil)
@@ -39,6 +39,7 @@
 (global-set-key (kbd "M-w") 'other-window) ; easier than C-x o
 (global-set-key (kbd "C-f") 'toggle-frame-maximized) ; C-f to fullscreen
 (global-set-key (kbd "C-l") 'global-linum-mode) ; Toggle line numbers
+(global-set-key (kbd "M-c") 'compile)
 
 ; Stuff setup from Emacs (themes, font)
 (custom-set-variables
