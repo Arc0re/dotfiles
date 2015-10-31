@@ -29,7 +29,7 @@
 ; Keyboard Shortcuts
 (global-set-key (kbd "C-c k") 'delete-window)
 (global-set-key (kbd "M-s") 'save-buffer) ; Mac style C-s
-(global-set-key (kbd "C-c w") 'other-window) ; easier than C-x o
+(global-set-key (kbd "C-c ;") 'other-window) ; easier than C-x o
 (global-set-key (kbd "C-c l") 'global-linum-mode) ; Toggle line numbers
 (global-set-key (kbd "C-c f") 'toggle-frame-maximized) ; C-f to fullscreen
 (global-set-key (kbd "<f5>") 'compile)
