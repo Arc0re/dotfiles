@@ -33,9 +33,10 @@
 (global-set-key (kbd "M-f") 'load-file) ; Alt+f
 (global-set-key (kbd "M-k") 'delete-window)
 (global-set-key (kbd "M-s") 'save-buffer) ; Mac style C-s
-(global-set-key (kbd "M-;") 'other-window) ; easier than C-x o
+(global-set-key (kbd "C-;") 'other-window) ; easier than C-x o
 (global-set-key (kbd "C-l") 'global-linum-mode) ; Toggle line numbers
 (global-set-key (kbd "C-f") 'toggle-frame-maximized) ; C-f to fullscreen
+(global-set-key (kbd "<f5>") 'compile)
 
 ; Stuff setup from Emacs (themes, font)
 (custom-set-variables
