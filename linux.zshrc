@@ -97,5 +97,5 @@ alias notepad="mousepad"
 plugins=(history history-substring-search python)
 # Startup stuff (greetings)
 # alsi
-# screenfetch
-archey3
+screenfetch
+# archey3
