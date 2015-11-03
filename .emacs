@@ -25,6 +25,7 @@
 ; C/C++ stuff
 (setq-default c-basic-offset 4 tab-width 4 indent-tab-mode t) ; Global 4 spaces indentation
 (setq c-default-style "linux" c-basic-offset 4) ; switches from GNU style and sets it to 4 spaces
+(c-set-offset 'case-label '+) ; Adds an indentation for switch cases
 
 ; Keyboard Shortcuts
 (global-set-key (kbd "C-c k") 'delete-window)
