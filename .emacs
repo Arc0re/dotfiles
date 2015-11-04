@@ -1,4 +1,8 @@
-; Clock
+; Loading code
+(add-to-list 'load-path "/home/arc/elisp")
+(require 'php-mode)
+
+;Clock
 (display-time)
 
 ; Startup Windowing
