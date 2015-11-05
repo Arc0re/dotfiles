@@ -42,7 +42,8 @@
 (global-set-key (kbd "s-w") 'other-window) ; easier than C-x o
 (global-set-key (kbd "C-c f") 'toggle-frame-maximized) ; C-f to fullscreen
 (global-set-key (kbd "C-c l") 'global-linum-mode) ; Toggle line numbers
-(global-set-key (kbd "<f5>") 'compile)
+(global-set-key (kbd "<f5>") 'compile) ; Only the first time to setup the build system (script, make...)
+(global-set-key (kbd "<f8>") 'recompile) ; 'compile without prompt asking for setup
 
 ; Stuff setup from Emacs (themes, font)
 (custom-set-variables
