@@ -4,6 +4,7 @@
 ; Loading code
 (add-to-list 'load-path "/Users/thomasguyot/elisp")
 (require 'php-mode)
+(require 'csharp-mode)
 
 ; Maximize at startup
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -26,8 +27,8 @@
 (set-face-background 'hl-line "dark blue")
 
 ; Font
-(add-to-list 'default-frame-alist '(font . "Liberation Mono-14"))
-(set-face-attribute 'default t :font "Liberation Mono-14")
+(add-to-list 'default-frame-alist '(font . "Liberation Mono-13"))
+(set-face-attribute 'default t :font "Liberation Mono-13")
 
 ; Prevent Emacs from making backup files
 (setq make-backup-files nil)
