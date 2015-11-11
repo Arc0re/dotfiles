@@ -2,10 +2,10 @@
 (add-to-list 'load-path "/home/arcore/elisp/php-mode")
 (require 'php-mode)
 
-; C-c to copy, C-v to paste, C-x to cut, C-z to cancel
+; C-c to copy, C-v to paste, C-x to cut, C-z to cancel, IBM's Common User Access
 (cua-mode t)
 
-;Clock
+; Clock
 (display-time)
 
 ; Startup Windowing
@@ -42,7 +42,7 @@
 (global-set-key (kbd "C-c f") 'toggle-frame-maximized) ; C-c f to fullscreen
 (global-set-key (kbd "<f5>") 'compile) ; Only the first time to setup the build system (script, make...)
 (global-set-key (kbd "<f8>") 'recompile) ; 'compile without prompt asking for setup
-
+(global-set-key (kbd "<f6>") 'menu-bar-mode) ; Toggle File-Edit-Options menu bar
 ; Stuff setup from Emacs (themes, font)
 (custom-set-variables
  '(custom-enabled-themes (quote (wheatgrass))))
