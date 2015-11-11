@@ -94,7 +94,7 @@ alias mp3="ncmpcpp"
 alias tmux="tmux -2"
 alias notepad="mousepad"
 
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 plugins=(history history-substring-search python)
 # Startup stuff (greetings)

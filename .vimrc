@@ -55,7 +55,7 @@ set mouse=a
 """" Vim behaviour
 """""""""""""""""""
 " remaping escape
-imap ii <Esc>
+"imap ii <Esc>
 
 " allows :e /file to hide current buffer instead of killing it
 set hidden
@@ -73,12 +73,12 @@ map <C-n> :NERDTreeToggle<CR>
 """""""""""""""""""
 
 "Pathogen plugin manager
-execute pathogen#infect()
+"execute pathogen#infect()
 
 "" Plugins config for lightline
 set laststatus=2
 
 "" neocomplete stuff
-let g:neocomplete#enable_at_startup = 1
+"let g:neocomplete#enable_at_startup = 1
 " <TAB> completion
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+"inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"

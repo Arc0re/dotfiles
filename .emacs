@@ -1,5 +1,5 @@
 ; Loading code
-(add-to-list 'load-path "/home/arc/elisp")
+(add-to-list 'load-path "/home/arcore/elisp/php-mode")
 (require 'php-mode)
 
 ;Clock
