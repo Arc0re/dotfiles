@@ -2,6 +2,9 @@
 (add-to-list 'load-path "/home/arcore/elisp/php-mode")
 (require 'php-mode)
 
+; C-c to copy, C-v to paste, C-x to cut, C-z to cancel
+(cua-mode t)
+
 ;Clock
 (display-time)
 
