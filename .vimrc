@@ -1,5 +1,4 @@
 """" Arc's .vimrc.
-"""" \(;,;)
 """" (;,;)/
 
 """"""""""""""""""""
@@ -13,7 +12,6 @@ syntax enable
 set t_Co=256
 
 " changing colorscheme
-"set background=dark " light or dark theme
 colorscheme iceberg
 
 """"""""""""""""""""
@@ -37,7 +35,6 @@ set cursorline
 
 " allows auto indent depending on the file
 filetype plugin indent on
-set omnifunc=syntaxcomplete#Complete
 
 " allows reload of the file if its modified elsewhere
 set autoread
@@ -48,14 +45,9 @@ set clipboard=unnamed
 " highlighting searches
 set hlsearch
 
-" enabling mouse for noobs
-set mouse=a
-
 """""""""""""""""""
 """" Vim behaviour
 """""""""""""""""""
-" remaping escape
-"imap ii <Esc>
 
 " allows :e /file to hide current buffer instead of killing it
 set hidden
@@ -65,20 +57,3 @@ set nobackup
 set noswapfile
 set autoindent
 
-" Toggle nerdtree...
-map <C-n> :NERDTreeToggle<CR>
-
-"""""""""""""""""""
-"""" Pathogen
-"""""""""""""""""""
-
-"Pathogen plugin manager
-"execute pathogen#infect()
-
-"" Plugins config for lightline
-set laststatus=2
-
-"" neocomplete stuff
-"let g:neocomplete#enable_at_startup = 1
-" <TAB> completion
-"inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
