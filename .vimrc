@@ -52,11 +52,11 @@ set hlsearch
 " allows :e /file to hide current buffer instead of killing it
 set hidden
 
-" Allows to save in sudo
-cmap W w !sudo tee % > /dev/null
-
 " no backup and swap
 set nobackup
 set noswapfile
 set autoindent
 
+" NOTES
+"" sudo -e filename TO OPEN AS SUDO WITH $EDITOR (USES YOUR .vimrc AND SAVES
+"" AS SUDO)
