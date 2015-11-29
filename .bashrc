@@ -19,3 +19,4 @@ alias gs="git status"
 alias src="source ~/.bashrc"
 alias brc="vi ~/.bashrc"
 alias htop="sudo htop"
+
