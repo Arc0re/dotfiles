@@ -1,0 +1,22 @@
+{
+	"caret_extra_bottom": 3,
+	"caret_extra_top": 3,
+	"caret_extra_width": 2,
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 13,
+	"font_face": "Courier New",
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"open_files_in_new_window": false,
+	"overlay_scroll_bars": "enabled",
+	"show_encoding": true,
+	"show_line_endings": true,
+	"translate_tabs_to_spaces": true,
+	"word_wrap": "true",
+    "scroll_past_end": true
+}
