@@ -1,12 +1,10 @@
 {
-	"caret_extra_bottom": 3,
-	"caret_extra_top": 3,
-	"caret_extra_width": 2,
+	"caret_style": "blink",
 	"close_windows_when_empty": false,
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
-	"font_size": 13,
 	"font_face": "Courier New",
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -14,9 +12,10 @@
 	],
 	"open_files_in_new_window": false,
 	"overlay_scroll_bars": "enabled",
+	"scroll_past_end": true,
 	"show_encoding": true,
 	"show_line_endings": true,
 	"translate_tabs_to_spaces": true,
 	"word_wrap": "true",
-    "scroll_past_end": true
+	"folder_exclude_patterns": [".svn", ".hg", "CVS"]
 }
