@@ -1,0 +1,27 @@
+{
+    "caret_style": "blink",
+    "close_windows_when_empty": false,
+    "color_scheme": "Packages/Theme - Farzher/Neon.tmTheme",
+    "ensure_newline_at_eof_on_save": true,
+    "folder_exclude_patterns":
+    [
+        ".svn",
+        ".hg",
+        "CVS"
+    ],
+    "font_face": "Courier New",
+    "font_size": 10,
+    "highlight_line": true,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "open_files_in_new_window": false,
+    "overlay_scroll_bars": "enabled",
+    "scroll_past_end": true,
+    "show_encoding": true,
+    "show_line_endings": true,
+    "theme": "Spacezero.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "word_wrap": "true"
+}
