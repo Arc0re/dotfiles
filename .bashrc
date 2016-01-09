@@ -17,6 +17,10 @@ fi
 
 # Exports
 export EDITOR="vim"
+export PATH=/usr/local/Cellar/mono/4.2.1.102_1/bin:$PATH
+export DEVKITPRO=/Users/thomasguyot/devkitPro
+export DEVKITARM=${DEVKITPRO}/devkitARM
+export CITRABIN=/Users/thomasguyot/Desktop/3ds/citra
 
 # User specific aliases and functions
 alias vi="vim"

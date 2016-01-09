@@ -12,6 +12,9 @@
 ; Clock
 (display-time)
 
+; Line numbers
+(global-linum-mode)
+
 ; Startup Windowing
 (split-window-horizontally)
 
@@ -26,9 +29,15 @@
 (global-hl-line-mode)
 (set-face-background 'hl-line "dark blue")
 
+; Set 80 characters limit
+(require 'whitespace)
+(setq whitespace-line-column 80)
+(setq whitespace-style '(face lines-tail))
+(add-hook 'prog-mode-hook 'whitespace-mode)
+
 ; Font
-(add-to-list 'default-frame-alist '(font . "Liberation Mono-13"))
-(set-face-attribute 'default t :font "Liberation Mono-13")
+(add-to-list 'default-frame-alist '(font . "proggyclean-11"))
+(set-face-attribute 'default t :font "proggyclean-11")
 
 ; Prevent Emacs from making backup files
 (setq make-backup-files nil)
