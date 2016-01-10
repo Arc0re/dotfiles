@@ -5,6 +5,12 @@
 (add-to-list 'load-path "/Users/thomasguyot/elisp")
 (require 'php-mode)
 (require 'csharp-mode)
+(require 'nyan-mode)
+
+; Nyan Cat
+(nyan-mode 1)
+(nyan-start-animation)
+(setq nyan-wavy-trail t)
 
 ; Maximize at startup
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -44,7 +50,7 @@
 
 ; C/C++ stuff
 (setq-default c-basic-offset 4 tab-width 4 indent-tab-mode t) ; Global 4 spaces indentation
-(setq c-default-style "linux" c-basic-offset 4) ; switches from GNU style and sets it to 4 spaces
+(setq c-default-style "k&r" c-basic-offset 4) ; switches from GNU style and sets it to 4 spaces
 
 ; Keyboard Shortcuts
 (global-set-key (kbd "C-c k") 'delete-window)
