@@ -36,8 +36,8 @@
 (add-hook 'prog-mode-hook 'whitespace-mode)
 
 ; Font
-(add-to-list 'default-frame-alist '(font . "proggyclean-11"))
-(set-face-attribute 'default t :font "proggyclean-11")
+(add-to-list 'default-frame-alist '(font . "tamsyn8x15-15")) ;proggyclean-11
+(set-face-attribute 'default t :font "tamsyn8x15-15")
 
 ; Prevent Emacs from making backup files
 (setq make-backup-files nil)
@@ -49,9 +49,11 @@
 ; Keyboard Shortcuts
 (global-set-key (kbd "C-c k") 'delete-window)
 (global-set-key (kbd "s-s") 'save-buffer) ; Mac style C-s, cmd = super
-(global-set-key (kbd "s-w") 'other-window) ; easier than C-x o
+(global-set-key (kbd "C-c w") 'other-window) ; easier than C-x o
 (global-set-key (kbd "C-c f") 'toggle-frame-maximized) ; C-f to fullscreen
 (global-set-key (kbd "C-c l") 'global-linum-mode) ; Toggle line numbers
+(global-set-key (kbd "C-c d") 'dired) ; Opens file manager
+(global-set-key (kbd "C-c m") 'buffer-menu)
 (global-set-key (kbd "<f5>") 'compile) ; Only the first time to setup the build system (script, make...)
 (global-set-key (kbd "<f8>") 'recompile) ; 'compile without prompt asking for setup
 
