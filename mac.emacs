@@ -56,6 +56,18 @@
 (setq-default c-basic-offset 4 tab-width 4 indent-tab-mode t) ; Global 4 spaces indentation
 (setq c-default-style "k&r" c-basic-offset 4) ; switches from GNU style and sets it to 4 spaces
 
+; Custom functions
+(defun load-config ()
+  "Loads .emacs"
+  (interactive)
+  (load-file "~/dotfiles/mac.emacs"))
+
+(defun edit-config ()
+  "Loads .emacs for edition"
+  (interactive)
+  (find-file "~/dotfiles/mac.emacs")
+  (emacs-lisp-mode))
+
 ; Keyboard Shortcuts
 (global-set-key (kbd "C-c k") 'delete-window)
 (global-set-key (kbd "s-s") 'save-buffer) ; Mac style C-s, cmd = super
@@ -64,9 +76,10 @@
 (global-set-key (kbd "C-c l") 'global-linum-mode) ; Toggle line numbers
 (global-set-key (kbd "C-c d") 'dired) ; Opens file manager
 (global-set-key (kbd "C-c m") 'buffer-menu) ; Lists buffers
-(global-set-key (kbd "C-c e") 'load-file) ; Quickload
 (global-set-key (kbd "C-c v") 'split-window-right) ; vsplit
 (global-set-key (kbd "C-c h") 'split-window-below) ; hsplit
+(global-set-key (kbd "<f6>") 'load-config) ; Quickload
+(global-set-key (kbd "<f7>") 'edit-config) ; Quickedit
 (global-set-key (kbd "<f5>") 'compile) ; Only the first time to setup the build system (script, make...)
 (global-set-key (kbd "<f8>") 'recompile) ; 'compile without prompt asking for setup
 
