@@ -37,7 +37,7 @@
 
 ; Highlight current line
 (global-hl-line-mode)
-(set-face-background 'hl-line "dark blue")
+(set-face-background 'hl-line "grey14")
 
 ; Set 80 characters limit
 (require 'whitespace)
@@ -60,10 +60,11 @@
 (global-set-key (kbd "C-c k") 'delete-window)
 (global-set-key (kbd "s-s") 'save-buffer) ; Mac style C-s, cmd = super
 (global-set-key (kbd "C-c w") 'other-window) ; easier than C-x o
-(global-set-key (kbd "C-c f") 'toggle-frame-maximized) ; C-f to fullscreen
+(global-set-key (kbd "C-c f") 'toggle-frame-maximized) ; C-c f to fullscreen
 (global-set-key (kbd "C-c l") 'global-linum-mode) ; Toggle line numbers
 (global-set-key (kbd "C-c d") 'dired) ; Opens file manager
-(global-set-key (kbd "C-c m") 'buffer-menu)
+(global-set-key (kbd "C-c m") 'buffer-menu) ; Lists buffers
+(global-set-key (kbd "C-c e") 'load-file) ; Quickload
 (global-set-key (kbd "<f5>") 'compile) ; Only the first time to setup the build system (script, make...)
 (global-set-key (kbd "<f8>") 'recompile) ; 'compile without prompt asking for setup
 
