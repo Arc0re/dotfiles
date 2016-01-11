@@ -65,6 +65,8 @@
 (global-set-key (kbd "C-c d") 'dired) ; Opens file manager
 (global-set-key (kbd "C-c m") 'buffer-menu) ; Lists buffers
 (global-set-key (kbd "C-c e") 'load-file) ; Quickload
+(global-set-key (kbd "C-c v") 'split-window-right) ; vsplit
+(global-set-key (kbd "C-c h") 'split-window-below) ; hsplit
 (global-set-key (kbd "<f5>") 'compile) ; Only the first time to setup the build system (script, make...)
 (global-set-key (kbd "<f8>") 'recompile) ; 'compile without prompt asking for setup
 
