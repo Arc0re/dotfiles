@@ -9,7 +9,7 @@
 (require 'nyan-mode)
 
 ; Theme
-(load-theme 'dark-laptop t)
+(load-theme 'late-night t)
 
 ; Nyan Cat
 (nyan-mode 1)
@@ -46,7 +46,7 @@
 (add-hook 'prog-mode-hook 'whitespace-mode)
 
 ; Font
-(add-to-list 'default-frame-alist '(font . "tamsyn8x15-15")) ;tamsyn8x15-15
+(add-to-list 'default-frame-alist '(font . "tamsyn8x15-15"))
 (set-face-attribute 'default t :font "tamsyn8x15-15")
 
 ; Prevent Emacs from making backup files
@@ -68,10 +68,12 @@
 (global-set-key (kbd "<f8>") 'recompile) ; 'compile without prompt asking for setup
 
 
-;; *******************************************************************************************************************
+;; ****************************************************************************************************
 ;; To launch Emacs with another .emacs than the $HOME one :
 ;; emacs -q(--no-init-file) -l .emacs_to_load
-;; Equivalent of emacs -mm on Windows : (w32-send-sys-command 61488) ou (toggle-frame-maximized) on line 1 of the file.
+;; Equivalent of emacs -mm on Windows : (w32-send-sys-command 61488) ou
+;; (toggle-frame-maximized) on line 1 of the file.
 ;; ABOUT KEYBOARD SHORTCUTS
 ;; The EmacsManual says that the combination of C-c
 ;; followed by a plain letter, and the function keys f5 through f9 are reserved for users. 
+
