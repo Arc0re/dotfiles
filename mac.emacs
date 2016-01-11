@@ -3,10 +3,13 @@
 
 ; Loading code
 (add-to-list 'load-path "/Users/thomasguyot/elisp")
+(add-to-list 'custom-theme-load-path "/Users/thomasguyot/elisp/themes/")
 (require 'php-mode)
 (require 'csharp-mode)
 (require 'nyan-mode)
-;(require 'borland-blue-theme)
+
+; Theme
+(load-theme 'dark-laptop t)
 
 ; Nyan Cat
 (nyan-mode 1)
@@ -14,7 +17,7 @@
 (setq nyan-wavy-trail t)
 
 ; Maximize at startup
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+;;(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 ; Clock
 (display-time)
@@ -23,7 +26,7 @@
 (global-linum-mode)
 
 ; Startup Windowing
-(split-window-horizontally)
+;;(split-window-horizontally)
 
 ; Menus
 (tool-bar-mode -1)
@@ -43,7 +46,7 @@
 (add-hook 'prog-mode-hook 'whitespace-mode)
 
 ; Font
-(add-to-list 'default-frame-alist '(font . "tamsyn8x15-15")) ;proggyclean-11
+(add-to-list 'default-frame-alist '(font . "tamsyn8x15-15")) ;tamsyn8x15-15
 (set-face-attribute 'default t :font "tamsyn8x15-15")
 
 ; Prevent Emacs from making backup files
@@ -64,11 +67,6 @@
 (global-set-key (kbd "<f5>") 'compile) ; Only the first time to setup the build system (script, make...)
 (global-set-key (kbd "<f8>") 'recompile) ; 'compile without prompt asking for setup
 
-; Stuff setup from Emacs (themes, font)
-(custom-set-variables
- '(custom-enabled-themes (quote (wheatgrass))))
-(custom-set-faces
-)
 
 ;; *******************************************************************************************************************
 ;; To launch Emacs with another .emacs than the $HOME one :
