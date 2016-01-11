@@ -6,6 +6,7 @@
 (require 'php-mode)
 (require 'csharp-mode)
 (require 'nyan-mode)
+;(require 'borland-blue-theme)
 
 ; Nyan Cat
 (nyan-mode 1)
@@ -67,7 +68,7 @@
 (custom-set-variables
  '(custom-enabled-themes (quote (wheatgrass))))
 (custom-set-faces
- )
+)
 
 ;; *******************************************************************************************************************
 ;; To launch Emacs with another .emacs than the $HOME one :
