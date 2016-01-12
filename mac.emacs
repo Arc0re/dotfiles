@@ -73,13 +73,13 @@
 (global-set-key (kbd "s-s") 'save-buffer) ; Mac style C-s, cmd = super
 (global-set-key (kbd "C-c w") 'other-window) ; easier than C-x o
 (global-set-key (kbd "C-c f") 'toggle-frame-maximized) ; C-c f to fullscreen
-(global-set-key (kbd "C-c l") 'global-linum-mode) ; Toggle line numbers
+(global-set-key (kbd "C-c n") 'global-linum-mode) ; Toggle line numbers
 (global-set-key (kbd "C-c d") 'dired) ; Opens file manager
 (global-set-key (kbd "C-c m") 'buffer-menu) ; Lists buffers
 (global-set-key (kbd "C-c v") 'split-window-right) ; vsplit
 (global-set-key (kbd "C-c h") 'split-window-below) ; hsplit
-(global-set-key (kbd "<f6>") 'load-config) ; Quickload
-(global-set-key (kbd "<f7>") 'edit-config) ; Quickedit
+(global-set-key (kbd "C-c l") 'load-config) ; Quickload
+(global-set-key (kbd "C-c e") 'edit-config) ; Quickedit
 (global-set-key (kbd "<f5>") 'compile) ; Only the first time to setup the build system (script, make...)
 (global-set-key (kbd "<f8>") 'recompile) ; 'compile without prompt asking for setup
 
