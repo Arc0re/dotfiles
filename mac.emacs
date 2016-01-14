@@ -5,11 +5,10 @@
 (add-to-list 'load-path "/Users/thomasguyot/elisp")
 (add-to-list 'custom-theme-load-path "/Users/thomasguyot/elisp/themes/")
 (require 'php-mode)
-(require 'csharp-mode)
 (require 'nyan-mode)
 
 ; Theme
-(load-theme 'granger t)
+(load-theme 'cyberpunk t)
 
 ; Nyan Cat
 (nyan-mode 1)
@@ -92,3 +91,12 @@
 ;; ABOUT KEYBOARD SHORTCUTS
 ;; The EmacsManual says that the combination of C-c
 ;; followed by a plain letter, and the function keys f5 through f9 are reserved for users. 
+
+;; Emacs stuff
+(custom-set-variables
+ '(ansi-color-names-vector
+   ["#000000" "#8b0000" "#00ff00" "#ffa500" "#7b68ee" "#dc8cc3" "#93e0e3" "#dcdccc"])
+ '(custom-safe-themes
+   (quote
+	("5f52e7abe59c3141c132efddeb729c8704d23d974072e219345ed8c47ecca709" "c3b7ab736571605a78028bf02c6c2a5adf1082cb3b91df26ca91acee6dfdda45" default)))
+ '(fci-rule-color "#383838"))
