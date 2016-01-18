@@ -1,11 +1,19 @@
 ; Set fn as Ctrl
 (setq ns-function-modifier 'control)
 
+; Read path for Lein
+(add-to-list 'exec-path "/usr/local/bin")
+
 ; Loading code
 (add-to-list 'load-path "/Users/thomasguyot/elisp")
 (add-to-list 'custom-theme-load-path "/Users/thomasguyot/elisp/themes/")
 (require 'php-mode)
 (require 'nyan-mode)
+
+;; MELPA repo
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+(package-initialize)
 
 ; Theme
 (load-theme 'cyberpunk t)
