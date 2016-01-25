@@ -18,6 +18,9 @@
 ; Theme
 (load-theme 'cyberpunk t)
 
+; Transparency
+;(set-frame-parameter (selected-frame) 'alpha '(85 50))
+
 ; Nyan Cat
 (nyan-mode 1)
 (nyan-start-animation)
@@ -53,8 +56,8 @@
 (add-hook 'prog-mode-hook 'whitespace-mode)
 
 ; Font
-(add-to-list 'default-frame-alist '(font . "tamsyn8x15-15"))
-(set-face-attribute 'default t :font "tamsyn8x15-15")
+(add-to-list 'default-frame-alist '(font . "gohufont-14")) ;tamsyn8x15-15
+(set-face-attribute 'default t :font "gohufont-14")
 
 ; Prevent Emacs from making backup files
 (setq make-backup-files nil)
