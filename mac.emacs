@@ -16,7 +16,8 @@
 (package-initialize)
 
 ; Theme
-(load-theme 'cyberpunk t)
+;(load-theme 'cyberpunk t)
+(load-theme 'dracula t)
 
 ; Transparency
 ;(set-frame-parameter (selected-frame) 'alpha '(85 50))
