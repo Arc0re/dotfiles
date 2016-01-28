@@ -9,35 +9,33 @@
 (add-to-list 'custom-theme-load-path "/Users/thomasguyot/elisp/themes/")
 (require 'php-mode)
 (require 'nyan-mode)
+(require 'swift-mode)
+(require 'jsx-mode)
 
-;; MELPA repo
+; MELPA repo
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
 ; Theme
-;(load-theme 'cyberpunk t)
-(load-theme 'dracula t)
+(load-theme 'gotham t)
 
 ; Transparency
 ;(set-frame-parameter (selected-frame) 'alpha '(85 50))
+
+; Reopen files on startup (session)
+(desktop-save-mode 1)
 
 ; Nyan Cat
 (nyan-mode 1)
 (nyan-start-animation)
 (setq nyan-wavy-trail t)
 
-; Maximize at startup
-;;(add-to-list 'default-frame-alist '(fullscreen . maximized))
-
 ; Clock
 (display-time)
 
 ; Line numbers
 (global-linum-mode)
-
-; Startup Windowing
-;;(split-window-horizontally)
 
 ; Menus
 (tool-bar-mode -1)
@@ -51,14 +49,14 @@
 (set-face-background 'hl-line "grey14")
 
 ; Set 80 characters limit
-(require 'whitespace)
-(setq whitespace-line-column 80)
-(setq whitespace-style '(face lines-tail))
-(add-hook 'prog-mode-hook 'whitespace-mode)
+;(require 'whitespace)
+;(setq whitespace-line-column 80)
+;(setq whitespace-style '(face lines-tail))
+;(add-hook 'prog-mode-hook 'whitespace-mode)
 
 ; Font
-(add-to-list 'default-frame-alist '(font . "gohufont-14")) ;tamsyn8x15-15
-(set-face-attribute 'default t :font "gohufont-14")
+(add-to-list 'default-frame-alist '(font . "Droid Sans Mono-13")) ;tamsyn8x15-15, gohufont-14
+(set-face-attribute 'default t :font "Droid Sans Mono-13")
 
 ; Prevent Emacs from making backup files
 (setq make-backup-files nil)
@@ -105,10 +103,3 @@
 ;; followed by a plain letter, and the function keys f5 through f9 are reserved for users. 
 
 ;; Emacs stuff
-(custom-set-variables
- '(ansi-color-names-vector
-   ["#000000" "#8b0000" "#00ff00" "#ffa500" "#7b68ee" "#dc8cc3" "#93e0e3" "#dcdccc"])
- '(custom-safe-themes
-   (quote
-	("5f52e7abe59c3141c132efddeb729c8704d23d974072e219345ed8c47ecca709" "c3b7ab736571605a78028bf02c6c2a5adf1082cb3b91df26ca91acee6dfdda45" default)))
- '(fci-rule-color "#383838"))
