@@ -18,7 +18,7 @@
 (package-initialize)
 
 ; Theme
-(load-theme 'gotham t)
+(load-theme 'purple-haze t)
 
 ; Transparency
 ;(set-frame-parameter (selected-frame) 'alpha '(85 50))
