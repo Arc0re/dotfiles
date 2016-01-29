@@ -19,6 +19,9 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
+; Auto-complete
+(ac-config-default)
+
 ; Theme
 (load-theme 'purple-haze t)
 
