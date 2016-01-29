@@ -11,6 +11,8 @@
 (require 'nyan-mode)
 (require 'swift-mode)
 (require 'jsx-mode)
+(autoload 'rust-mode "rust-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
 
 ; MELPA repo
 (require 'package)
@@ -55,8 +57,9 @@
 ;(add-hook 'prog-mode-hook 'whitespace-mode)
 
 ; Font
-(add-to-list 'default-frame-alist '(font . "Droid Sans Mono-13")) ;tamsyn8x15-15, gohufont-14
-(set-face-attribute 'default t :font "Droid Sans Mono-13")
+(setq mac-allow-anti-aliasing nil)  ;; turn off anti-aliasing
+(add-to-list 'default-frame-alist '(font . "DOSEGA-16")) ;ProggyClean-11, tamsyn8x15-15, gohufont-14, Droid Sans Mono-13
+(set-face-attribute 'default t :font "DOSEGA-16")
 
 ; Prevent Emacs from making backup files
 (setq make-backup-files nil)
