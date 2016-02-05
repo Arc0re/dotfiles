@@ -13,6 +13,8 @@
 (require 'jsx-mode)
 (autoload 'rust-mode "rust-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+(autoload 'lua-mode "lua-mode" "Lua editing mode." t)
+(add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 
 ; MELPA repo
 (require 'package)
@@ -23,7 +25,7 @@
 (ac-config-default)
 
 ; Theme
-(load-theme 'purple-haze t)
+(load-theme 'brin t)
 
 ; Transparency
 ;(set-frame-parameter (selected-frame) 'alpha '(85 50))
@@ -60,9 +62,9 @@
 ;(add-hook 'prog-mode-hook 'whitespace-mode)
 
 ; Font
-(setq mac-allow-anti-aliasing nil)  ;; turn off anti-aliasing
-(add-to-list 'default-frame-alist '(font . "DOSEGA-16")) ;ProggyClean-11, tamsyn8x15-15, gohufont-14, Droid Sans Mono-13
-(set-face-attribute 'default t :font "DOSEGA-16")
+;(setq mac-allow-anti-aliasing nil)  ;; turn off anti-aliasing
+(add-to-list 'default-frame-alist '(font . "tamsyn8x17-17")) ;ProggyClean-11, tamsyn8x15-15, gohufont-14, Droid Sans Mono-13
+(set-face-attribute 'default t :font "tamsyn8x17-17") ;DOSEGA-16
 
 ; Prevent Emacs from making backup files
 (setq make-backup-files nil)
