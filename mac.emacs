@@ -25,7 +25,7 @@
 (ac-config-default)
 
 ; Theme
-(load-theme 'brin t)
+(load-theme 'cyberpunk t)
 
 ; Transparency
 ;(set-frame-parameter (selected-frame) 'alpha '(85 50))
@@ -63,8 +63,8 @@
 
 ; Font
 ;(setq mac-allow-anti-aliasing nil)  ;; turn off anti-aliasing
-(add-to-list 'default-frame-alist '(font . "Liberation Sans-12")) ;ProggyClean-11, tamsyn8x15-15/8x17-17, gohufont-14, Droid Sans Mono-13
-(set-face-attribute 'default t :font "Liberation Sans-12") ;DOSEGA-16
+(add-to-list 'default-frame-alist '(font . "tamsyn8x15-15")) ;ProggyClean-11, tamsyn8x15-15/8x17-17, gohufont-14, Droid Sans Mono-13
+(set-face-attribute 'default t :font "tamsyn8x15-15") ;DOSEGA-16
 
 ; Prevent Emacs from making backup files
 (setq make-backup-files nil)
