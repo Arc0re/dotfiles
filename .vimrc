@@ -4,6 +4,7 @@
 """"""""""""""""""""
 """" Colors & themes
 """"""""""""""""""""
+set guifont=Courier:h18:cDEFAULT
 
 " enables syntax highlighting
 syntax enable
@@ -12,7 +13,7 @@ syntax enable
 set t_Co=256
 
 " changing colorscheme
-colorscheme iceberg
+colorscheme elflord
 
 """"""""""""""""""""
 """" Spaces & tabs

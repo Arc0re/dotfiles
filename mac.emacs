@@ -1,18 +1,11 @@
 ; Set fn as Ctrl
 (setq ns-function-modifier 'control)
 
-; Read path for Lein
-(add-to-list 'exec-path "/usr/local/bin")
-
 ; Loading code
-(add-to-list 'load-path "/Users/thomasguyot/elisp")
-(add-to-list 'custom-theme-load-path "/Users/thomasguyot/elisp/themes/")
+(add-to-list 'load-path "~/elisp")
+(add-to-list 'custom-theme-load-path "~/elisp/themes/")
 (require 'php-mode)
 (require 'nyan-mode)
-(require 'swift-mode)
-(require 'jsx-mode)
-(autoload 'rust-mode "rust-mode" nil t)
-(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
 (autoload 'lua-mode "lua-mode" "Lua editing mode." t)
 (add-to-list 'auto-mode-alist '("\\.lua$" . lua-mode))
 
@@ -22,13 +15,10 @@
 (package-initialize)
 
 ; Auto-complete
-(ac-config-default)
+;(ac-config-default)
 
 ; Theme
-(load-theme 'cyberpunk t)
-
-; Transparency
-;(set-frame-parameter (selected-frame) 'alpha '(85 50))
+;(load-theme 'cyberpunk t)
 
 ; Reopen files on startup (session)
 (desktop-save-mode 1)
@@ -47,24 +37,25 @@
 ; Menus
 (tool-bar-mode -1)
 (menu-bar-mode -1)
-
-; Hide scroll bar
 (scroll-bar-mode -1)
+
+; C-c to copy, C-v to paste, C-x to cut, C-z to cancel, IBM's Common User Access, for Muggles
+(cua-mode t)
 
 ; Highlight current line
 (global-hl-line-mode)
 (set-face-background 'hl-line "grey14")
 
 ; Set 80 characters limit
-;(require 'whitespace)
-;(setq whitespace-line-column 80)
-;(setq whitespace-style '(face lines-tail))
-;(add-hook 'prog-mode-hook 'whitespace-mode)
+(require 'whitespace)
+(setq whitespace-line-column 80)
+(setq whitespace-style '(face lines-tail))
+(add-hook 'prog-mode-hook 'whitespace-mode)
 
 ; Font
 ;(setq mac-allow-anti-aliasing nil)  ;; turn off anti-aliasing
-(add-to-list 'default-frame-alist '(font . "tamsyn8x15-15")) ;ProggyClean-11, tamsyn8x15-15/8x17-17, gohufont-14, Droid Sans Mono-13
-(set-face-attribute 'default t :font "tamsyn8x15-15") ;DOSEGA-16
+;(add-to-list 'default-frame-alist '(font . "tamsyn8x15-15")) ;ProggyClean-11, tamsyn8x15-15/8x17-17, gohufont-14, Droid Sans Mono-13
+;(set-face-attribute 'default t :font "tamsyn8x15-15") ;DOSEGA-16
 
 ; Prevent Emacs from making backup files
 (setq make-backup-files nil)
@@ -99,6 +90,20 @@
 (global-set-key (kbd "C-c e") 'edit-config) ; Quickedit
 (global-set-key (kbd "<f5>") 'compile) ; Only the first time to setup the build system (script, make...)
 (global-set-key (kbd "<f8>") 'recompile) ; 'compile without prompt asking for setup
+
+; Hardcoded color scheme, 'list-colors-display'
+(defun load-custom-colors ()
+  "Loads the hardcoded theme"
+  (set-background-color "black")
+  (set-face-attribute 'font-lock-builtin-face nil :foreground "blue violet") ; builtin functions
+  (set-face-attribute 'font-lock-comment-face nil :foreground "dark slate grey")
+  (set-face-attribute 'font-lock-constant-face nil :foreground "dark slate") ; NULL, ...
+  (set-face-attribute 'font-lock-function-name-face nil :foreground "violet red")
+  (set-face-attribute 'font-lock-keyword-face nil :foreground "royal blue") ; if, while...
+  (set-face-attribute 'font-lock-string-face nil :foreground "RoyalBlue4")
+  (set-face-attribute 'font-lock-type-face nil :foreground "steel blue") ; user defined datatypes
+  (set-face-attribute 'font-lock-variable-name-face nil :foreground "dodger blue"))
+(load-custom-colors)
 
 
 ;; ****************************************************************************************************
